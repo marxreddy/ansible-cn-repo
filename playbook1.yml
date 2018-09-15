@@ -1,0 +1,12 @@
+# filename : playbook1.yml
+
+-
+  name:	play1
+  hosts: server1 
+  tasks:
+   - name: execute command 'date'
+     command: date
+
+
+
+

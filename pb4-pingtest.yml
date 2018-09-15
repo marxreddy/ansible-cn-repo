@@ -1,0 +1,11 @@
+# filename: pb4-pingtest.yml
+
+-
+  name: pb4-pingtest
+  hosts: all
+  tasks:
+  - name: ping test
+    ping:
+
+
+

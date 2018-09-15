@@ -1,0 +1,13 @@
+# file name: pb5-etc-hosts.yml
+# purpose : print cat /etc/hosts on target hosts
+
+-
+
+  name: print /etc/hosts ansible playbook
+  hosts: server1
+  tasks:
+   - name: execute /etc/hosts on target
+     command: cat /etc/hosts 
+
+
+

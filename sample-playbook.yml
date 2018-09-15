@@ -1,0 +1,12 @@
+# sample playbook.yml
+
+-
+
+  name: sample playbook
+  hosts: server1
+  tasks:
+  - name: run httpd
+  yum:
+   name: httpd
+   state: latest
+
