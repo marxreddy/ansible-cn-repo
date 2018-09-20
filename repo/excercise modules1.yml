@@ -1,0 +1,7 @@
+-
+
+  name: Execute a Script on all web server nodes
+  hosts: web_nodes
+  tasks:
+   - name: script
+     script: /tmp/install_script.sh

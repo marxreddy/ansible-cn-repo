@@ -1,0 +1,12 @@
+# purpose : to install git on all server production pcs
+# filename: pb5-git-install-allhosts.yml
+
+-
+  name: play 1
+  hosts: all
+  tasks:
+    - name: git install
+      command: yum install -y git
+
+    - name: create a log file if installed successfully
+      script: ./git_log_script.sh

@@ -2,7 +2,7 @@
 
 - 
   name: play3
-  hosts: server1
+  hosts: server2
   tasks:
   - name: install the latest version of Apache
     yum:

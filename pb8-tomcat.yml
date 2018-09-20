@@ -1,0 +1,17 @@
+# purpose: install of tomcat
+# filename : pb8-tomcat.yml
+-
+
+  name: play 1
+  hosts: all
+  tasks:
+    - name: install tomcat
+      yum:
+        name: tomcat
+        state: present
+
+    - name: service start
+      service:
+        name: tomcat
+        state: started
+        

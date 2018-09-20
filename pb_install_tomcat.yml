@@ -1,0 +1,12 @@
+
+# purpose to install tomcat on all servers
+
+-
+
+  name: play1
+  hosts: all
+  tasks:
+  - name: install tomcat
+    yum:
+     name: tomcat
+     state: present 

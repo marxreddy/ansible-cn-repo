@@ -1,12 +1,11 @@
-# sample playbook.yml
+# sample play book
 
 -
 
   name: sample playbook
   hosts: server1
   tasks:
-  - name: run httpd
-  yum:
-   name: httpd
-   state: latest
-
+    - name: install httpd
+      yum:
+       name: httpd
+       state: present

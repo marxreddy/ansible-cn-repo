@@ -1,0 +1,9 @@
+# sample code
+
+-
+
+  name: play1
+  hosts: server1
+  tasks:
+    - name: execute a command
+      command: yum install -y httpd

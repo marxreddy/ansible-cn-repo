@@ -1,0 +1,13 @@
+# purpose : Variable sample
+# filename : pb7-variable-sample.yml
+-
+
+  name: sample file on variables in ansible
+  hosts: all
+  vars:
+    dns_ip: 8.8.8.8
+  tasks:
+    - lineinfile:
+       dest: /etc/sysconfig/network-scripts/ifcfg-enp0s3
+       state: present
+       line: DNS2={{ dns_ip }}

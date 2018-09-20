@@ -1,8 +1,8 @@
-# filename : pb2-script.hml
+# filename : pb2-script.yml
 
 -
   name: pb2 script
-  hosts: server1
+  hosts: all
   tasks:
    - name: execute script on hosts
      script: git_install.sh
